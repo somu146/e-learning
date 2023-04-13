@@ -1,0 +1,43 @@
+require: rubocop-rails
+
+Rails:
+  Enabled: true
+
+StringLiterals:
+  Enabled: false
+  
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier: 
+  Enabled: false
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'spec/rails_helper.rb'
+    - 'spec/spec_helper.rb'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'log/**/*'
+    - 'config/**/*'
+    - 'ng/**/*'
+    - 'node_modules/**/*'
+    - 'Gemfile'
+    - 'test/channels/application_cable/connection_test.rb'
+    - 'test/test_helper.rb'
